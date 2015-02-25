@@ -176,8 +176,14 @@ nav {
 			color: $color-title;
 		}
 	}
+	.navbar-nav {
+		margin: 0px -15px;
+	}
 	.navbar-nav>li>a {
 		padding: 27px 15px;
+		@media #{$media-sm} {
+			padding: 10px 15px;
+		}
 	}
 	.navbar-toggle{
 		width: 100%;

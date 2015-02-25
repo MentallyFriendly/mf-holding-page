@@ -127,8 +127,13 @@ nav {
     @media only screen and (min-width: 768px) {
       nav li > a {
         color: #FFF; } }
+  nav .navbar-nav {
+    margin: 0px -15px; }
   nav .navbar-nav > li > a {
     padding: 27px 15px; }
+    @media only screen and (min-width: 768px) {
+      nav .navbar-nav > li > a {
+        padding: 10px 15px; } }
   nav .navbar-toggle {
     width: 100%;
     text-align: center;
