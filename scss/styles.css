@@ -150,8 +150,6 @@ nav {
         background-color: transparent;
         padding-top: 20px;
         padding-bottom: 20px; } }
-    nav #navbar.navbar-collapse {
-      max-height: 1000px !important; }
 
 button {
   font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
@@ -300,7 +298,8 @@ footer .contact-section {
     margin-bottom: 20px; }
 footer #contact-syd {
   background-color: #122434;
-  color: #fff !important; }
+  color: #fff !important;
+  z-index: 5; }
   footer #contact-syd .details, footer #contact-syd .details a {
     color: #fff; }
   footer #contact-syd .details a:hover {
@@ -309,6 +308,27 @@ footer #contact-ldn {
   background-color: #B1C841; }
   footer #contact-ldn .details a:hover {
     color: #fff; }
+footer .address {
+  background-color: #B1C841;
+  position: relative; }
+  footer .address .blue-overflow {
+    background-color: #122434;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    width: 50%;
+    z-index: 1;
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      footer .address .blue-overflow {
+        display: block; } }
+  footer .address .mobile-border-fix {
+    padding-left: 0px;
+    padding-right: 0px; }
+    @media only screen and (min-width: 768px) {
+      footer .address .mobile-border-fix {
+        padding-left: 15px;
+        padding-right: 15px; } }
 
 #soda {
   background: url("../img/soda.png") no-repeat 30px;
