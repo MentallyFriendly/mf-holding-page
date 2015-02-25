@@ -150,8 +150,6 @@ nav {
         background-color: transparent;
         padding-top: 20px;
         padding-bottom: 20px; } }
-    nav #navbar.navbar-collapse {
-      min-height: 2000px !important; }
 
 button {
   font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
