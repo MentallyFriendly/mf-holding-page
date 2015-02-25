@@ -87,6 +87,9 @@ p {
   padding-bottom: 50px;
   padding-left: 30px; }
 
+.staff-title {
+  padding-left: 15px; }
+
 .mf-navy {
   color: #122434; }
 
@@ -230,8 +233,8 @@ section {
     #landing-page .title-subheading {
       font-size: 20px; } }
 #landing-page .chevron {
-  width: 34px;
-  margin: 0px auto;
+  position: absolute;
+  bottom: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
   -moz-transform: translate(-50%, 0%);
@@ -269,7 +272,7 @@ section {
   height: 330px;
   padding-top: 50px; }
   .work-article img {
-    margin-top: 0px;
+    margin-top: 0 px;
     margin-bottom: 25px; }
   @media only screen and (min-width: 480px) {
     .work-article {
@@ -314,10 +317,30 @@ footer #contact-ldn {
   #soda p {
     display: inline;
     padding: 0px 20px 0 0px; }
+  #soda a {
+    text-decoration: none; }
 
 #thats-it {
   background-color: #fff;
   text-align: center; }
+  @media only screen and (min-width: 320px) {
+    #thats-it {
+      text-align: left; } }
+  @media only screen and (min-width: 480px) {
+    #thats-it {
+      text-align: left; } }
+  @media only screen and (min-width: 768px) {
+    #thats-it {
+      text-align: center; } }
+  @media only screen and (min-width: 992px) {
+    #thats-it {
+      text-align: center; } }
+
+.footer {
+  font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  color: #122434; }
 
 #loader {
   background-color: #122434;
