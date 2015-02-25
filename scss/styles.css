@@ -234,11 +234,15 @@ section {
   margin: 0px auto;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
   transform: translate(-50%, 0);
   cursor: pointer;
   position: absolute;
   -webkit-animation: pulse 2s infinite ease-in-out;
+  -moz-animation: pulse 2s infinite ease-in-out;
+  -o-animation: pulse 2s infinite ease-in-out;
   animation: pulse 2s infinite ease-in-out; }
 @-webkit-keyframes pulse {
   0% {
@@ -265,7 +269,7 @@ section {
   height: 330px;
   padding-top: 50px; }
   .work-article img {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 25px; }
   @media only screen and (min-width: 480px) {
     .work-article {
@@ -349,3 +353,5 @@ svg {
 @keyframes draw {
   to {
     stroke-dashoffset: 0; } }
+
+/*# sourceMappingURL=styles.css.map */
