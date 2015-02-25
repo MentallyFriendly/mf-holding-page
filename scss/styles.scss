@@ -299,6 +299,7 @@ section{
 		background-position: center;
 		width: 100%;
 		height: 445px;
+		height: 480px;
 		@media #{$media-sm} {
 			background: none;
 			background-position: center;
@@ -346,7 +347,7 @@ section{
 		// 	width: 492px
 		// }
 	}
-	.chevron{
+	.chevron {
 		//width: 34px;
 		//margin: 0px auto;
 		 position: absolute;
@@ -377,6 +378,16 @@ section{
 
 		@media #{$media-md} {
 			margin: 200px auto 0px auto;
+		}
+		a {
+			width: 34px;
+			height: 12px;
+			display: inline-block;
+			background: url('../img/chevron.png') no-repeat;
+			background-size: 34px 12px;
+		}
+		a:focus {
+			background-color: transparent !important;
 		}
 	}
 }
@@ -415,6 +426,30 @@ section{
 		margin-top: 0
 		px;
 		margin-bottom: 25px;
+	}
+	.fitnessfirst-logo {
+		width: 207px;
+		height: 41px;
+		display: inline-block;
+		margin-bottom: 25px;
+		background: url('../img/fitness-first.png') no-repeat;
+		background-size: 207px 41px;
+	}
+	.coles-logo {
+		width: 127px;
+		height: 39px;
+		display: inline-block;
+		margin-bottom: 25px;
+		background: url('../img/coles.png') no-repeat;
+		background-size: 127px 39px;
+	}
+	.guardian-logo {
+		width: 168px;
+		height: 33px;
+		display: inline-block;
+		margin-bottom: 25px;
+		background: url('../img/guardian.png') no-repeat;
+		background-size: 168px 33px;
 	}
 	@media #{$media-xs} {
 		height: 250px;
@@ -509,6 +544,7 @@ footer{
 // SODA
 #soda{
 	background: url('../img/soda.png') no-repeat 30px;
+	background-size: 39px 49px;
 	padding-left: 90px;
 	p{
 		display: inline;
@@ -584,6 +620,28 @@ svg{
 	to{
 		stroke-dashoffset:0;
 	}
+}
+
+/* ============================================================
+   MOBILE RETINA
+   ============================================================ */
+@media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
+	#landing-page .chevron a {
+		background-image: url('../img/chevron@2x.png');
+	}
+	.work-article .fitnessfirst-logo {
+		background-image: url('../img/fitness-first@2x.png');
+	}
+	.work-article .coles-logo {
+		background-image: url('../img/coles@2x.png');
+	}
+	.work-article .guardian-logo {
+		background-image: url('../img/guardian@2x.png');
+	}
+	#soda {
+		background-image: url('../img/soda@2x.png');
+	}
+
 }
 
 
