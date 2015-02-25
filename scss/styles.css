@@ -127,6 +127,8 @@ nav {
     @media only screen and (min-width: 768px) {
       nav li > a {
         color: #FFF; } }
+  nav .navbar-nav > li > a {
+    padding: 27px 15px; }
   nav .navbar-toggle {
     width: 100%;
     text-align: center;
@@ -151,7 +153,8 @@ nav {
     line-height: 14px;
     padding: 9px 16px !important; }
   nav #navbar {
-    background-color: #fff; }
+    background-color: #fff;
+    max-height: 382px; }
     @media only screen and (min-width: 768px) {
       nav #navbar {
         background-color: transparent;
