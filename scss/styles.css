@@ -301,7 +301,7 @@ section {
     width: 34px;
     height: 12px;
     display: inline-block;
-    background: url("../img/chevron.png") no-repeat;
+    background: url("../img/chevron-white.png") no-repeat;
     background-size: 34px 12px; }
   #landing-page .chevron a:focus {
     background-color: transparent !important; }
@@ -473,7 +473,7 @@ svg {
    ============================================================ */
 @media only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-devicepixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx) {
   #landing-page .chevron a {
-    background-image: url("../img/chevron@2x.png"); }
+    background-image: url("../img/chevron-white@2x.png"); }
 
   .work-article .fitnessfirst-logo {
     background-image: url("../img/fitness-first@2x.png"); }
@@ -486,5 +486,3 @@ svg {
 
   #soda {
     background-image: url("../img/soda@2x.png"); } }
-
-/*# sourceMappingURL=styles.css.map */
