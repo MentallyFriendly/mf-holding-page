@@ -131,7 +131,14 @@ nav {
     width: 100%;
     text-align: center;
     margin: 8px 0px;
-    color: #333333; }
+    color: #333333;
+    background-color: #fff;
+    border-radius: 0px;
+    margin: 0px;
+    padding: 17px 10px; }
+    @media only screen and (min-width: 768px) {
+      nav .navbar-toggle {
+        background: none; } }
   nav .button {
     font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
     font-weight: 300;
@@ -204,7 +211,16 @@ section {
   height: 100%;
   width: 100%;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  background: url("../img/video-poster.png") no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 445px; }
+  @media only screen and (min-width: 768px) {
+    #landing-page #video-container {
+      background: none;
+      background-position: center;
+      height: 100%; } }
 #landing-page video {
   position: relative;
   z-index: 0;
@@ -217,13 +233,17 @@ section {
 #landing-page #title-text {
   position: absolute;
   top: 40%;
-  left: 5%; }
+  left: 5%;
+  padding-top: 20px; }
+  @media only screen and (min-width: 768px) {
+    #landing-page #title-text {
+      padding-top: 0px; } }
 #landing-page .title-subheading {
   position: absolute;
   top: 25%;
   left: 5%;
   color: #FFF;
-  display: none; }
+  display: block; }
   @media only screen and (min-width: 768px) {
     #landing-page .title-subheading {
       display: block; } }
@@ -396,5 +416,3 @@ svg {
 @keyframes draw {
   to {
     stroke-dashoffset: 0; } }
-
-/*# sourceMappingURL=styles.css.map */
