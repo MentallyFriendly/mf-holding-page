@@ -288,7 +288,7 @@ section {
     width: 34px;
     height: 12px;
     display: inline-block;
-    background: url("../img/chevron.png") no-repeat 30px;
+    background: url("../img/chevron.png") no-repeat;
     background-size: 34px 12px; }
   #landing-page .chevron a:focus {
     background-color: transparent !important; }
