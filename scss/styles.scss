@@ -136,6 +136,19 @@ p{
 .mf-white{
 	color: $color-title
 }
+.body-overlay {
+position: fixed;
+top: 0px;
+left: 0px;
+right: 0px;
+bottom: 0px;
+background-color: #fff;
+z-index: 20;
+display: none;
+}
+.navbar-fixed-top {
+	border: none;
+}
 nav {
 
 	&.off-video-nav{
