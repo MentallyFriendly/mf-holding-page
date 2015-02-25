@@ -11,7 +11,7 @@ var height = $(window).height();
 	// 	$('#loader').delay(2500).animate({
 	// 		opacity:0
 	// 	}, function () {
-	// 		$(this).remove();	
+	// 		$(this).remove();
 	// 		$('nav').animate({
 	// 			opacity:1
 	// 		});
@@ -40,10 +40,10 @@ $(document).ready(function(){
 
 	// Set mobile menu to fit window height
 
-	$('#navbar').height(height);
-	$('.navbar-collapse').css({
-		'max-height': height
-	});
+	// $('#navbar').height(height);
+	// $('.navbar-collapse').css({
+	// 	'max-height': height
+	// });
 
 // Fit landing page to screen
 	// function setLandingPageSize() {
@@ -56,7 +56,7 @@ $(document).ready(function(){
 	// $(window).resize(function() {
 	// 	setLandingPageSize();
 	// 	console.log('resize');
-	// }); 
+	// });
 
 	// setLandingPageSize();
 
@@ -91,16 +91,16 @@ $(document).ready(function(){
 	//     delay: delay,
 	//     speed: speed,
 	//     lines: ['hopelessly', 'deliberately', 'scarily', 'proudly', 'rapidly', 'unashamedly', 'emotionally', 'elegantly', 'abundantly'],
-	//     callback: function() { 
-	    	
+	//     callback: function() {
+
 	//     }
 	// });
 	// $('#h1-second-line').dynamo({
 	//     delay: delay,
 	//     speed: speed,
 	//     lines: ['devoted', 'quick', 'efficient', 'independent', 'evolving', 'small', 'available', 'wasted', 'clear'],
-	//     callback: function() { 
-	    	
+	//     callback: function() {
+
 	//     }
 	// });
 });
