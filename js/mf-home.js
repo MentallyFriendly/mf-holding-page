@@ -81,6 +81,20 @@ $(document).ready(function(){
 // Close mobile menu on link click
 	$('.navbar-nav a').on('click', function(){
 		$('#navbar').collapse('hide');
+		$('.body-overlay').fadeOut('150');
+	});
+
+	$('.navbar-toggle').on('click', function(){
+		if( $(this).hasClass('collapsed') ){
+			$('.body-overlay').fadeIn('150');
+		}else{
+			$('.body-overlay').fadeOut('150');
+		}
+	});
+
+	$('.body-overlay').on('click', function(){
+		$('#navbar').collapse('hide');
+		$('.body-overlay').fadeOut('150');
 	});
 
 // Rotating title text
