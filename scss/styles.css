@@ -113,6 +113,7 @@ p {
   border: none; }
 
 nav {
+  opacity: 0;
   background-color: transparent;
   position: fixed;
   top: 0; }
@@ -277,15 +278,11 @@ section {
   bottom: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
-  -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
-  -o-transform: translate(-50%, 0%);
   transform: translate(-50%, 0);
   cursor: pointer;
   position: absolute;
   -webkit-animation: pulse 2s infinite ease-in-out;
-  -moz-animation: pulse 2s infinite ease-in-out;
-  -o-animation: pulse 2s infinite ease-in-out;
   animation: pulse 2s infinite ease-in-out; }
 @-webkit-keyframes pulse {
   0% {
@@ -486,5 +483,3 @@ svg {
 
   #soda {
     background-image: url("../img/soda.png"); } }
-
-/*# sourceMappingURL=styles.css.map */

@@ -2,21 +2,21 @@ var width = $(window).width();
 var height = $(window).height();
 
 // Page loader
-	// $('#loader').css({
-	// 	'min-height': height,
-	// 	'min-width': width
-	// });
+	$('#loader').css({
+		'min-height': height,
+		'min-width': width
+	});
 
-	// $(window).load(function(){
-	// 	$('#loader').delay(2500).animate({
-	// 		opacity:0
-	// 	}, function () {
-	// 		$(this).remove();
-	// 		$('nav').animate({
-	// 			opacity:1
-	// 		});
-	// 	})
-	// });
+	$(window).load(function(){
+		$('#loader').delay(2500).animate({
+			opacity:0
+		}, function () {
+			$(this).remove();
+			$('nav').animate({
+				opacity:1
+			});
+		})
+	});
 
 $(document).ready(function(){
 
