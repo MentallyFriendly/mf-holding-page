@@ -15,7 +15,20 @@ var height = $(window).height();
 			$('nav').animate({
 				opacity:1
 			});
-		})
+		});
+
+		if ( $('.whr-items').length > 0) {
+			var items = $('.whr-items'),
+			firstItem = $(items[0]),
+			secondItem = $(items[1]);
+
+			if (firstItem.height() > secondItem.height() ) {
+				secondItem.height( firstItem.height() );
+			} else {
+				firstItem.height( secondItem.height() );
+			};
+		};
+
 	});
 
 $(document).ready(function(){
@@ -37,6 +50,7 @@ $(document).ready(function(){
 		}
 
 	});
+
 
 	// Set mobile menu to fit window height
 

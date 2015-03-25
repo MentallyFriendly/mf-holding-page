@@ -483,3 +483,61 @@ svg {
 
   #soda {
     background-image: url("../img/soda.png"); } }
+.careers nav {
+  opacity: 1; }
+
+#whr_embed_hook {
+  font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 300;
+  font-style: normal; }
+  #whr_embed_hook .whr-items {
+    display: block !important;
+    height: 100%;
+    padding: 20px; }
+  #whr_embed_hook .whr-group {
+    padding: 20px 20px 0px 20px; }
+  #whr_embed_hook .whr-title {
+    margin-top: 20px;
+    margin-bottom: 5px; }
+  #whr_embed_hook .whr-info {
+    display: none; }
+  #whr_embed_hook h2:first-child {
+    background-color: #122434;
+    width: 50%;
+    display: block;
+    float: left; }
+    #whr_embed_hook h2:first-child a {
+      color: #FFF; }
+  #whr_embed_hook ul:nth-child(2) {
+    display: block;
+    background-color: #122434;
+    width: 50%;
+    float: left;
+    clear: left; }
+    #whr_embed_hook ul:nth-child(2) .whr-item {
+      color: #FFF; }
+    #whr_embed_hook ul:nth-child(2) .whr-title a {
+      color: #FFF; }
+    #whr_embed_hook ul:nth-child(2) ul {
+      display: none; }
+  #whr_embed_hook h2:nth-child(3) {
+    background-color: #B1C841;
+    width: 50%;
+    display: block;
+    float: right;
+    margin-top: -44px; }
+    #whr_embed_hook h2:nth-child(3) a {
+      color: #122434; }
+  #whr_embed_hook ul:nth-child(4) {
+    background-color: #B1C841;
+    width: 50%;
+    display: block;
+    float: right;
+    clear: right; }
+    #whr_embed_hook ul:nth-child(4) .whr-item {
+      color: #122434;
+      background-color: #B1C841; }
+    #whr_embed_hook ul:nth-child(4) .whr-title a {
+      color: #122434; }
+    #whr_embed_hook ul:nth-child(4) ul {
+      display: none; }
