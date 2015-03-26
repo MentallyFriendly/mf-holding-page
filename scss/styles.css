@@ -501,10 +501,12 @@ svg {
     .careers .job-listing {
       padding-right: 15px;
       padding-left: 15px; } }
+.careers footer {
+  border-top: 5px solid #fff; }
 
 #whr_embed_hook .whr-items {
   display: block !important;
-  height: auto;
+  height: auto !important;
   padding: 25px; }
   @media only screen and (min-width: 768px) {
     #whr_embed_hook .whr-items {
@@ -527,33 +529,28 @@ svg {
 #whr_embed_hook h2:nth-child(3) {
   background-color: #122434;
   width: 100%;
-  display: block;
-  z-index: 5;
-  padding-left: 40px; }
+  display: block; }
   #whr_embed_hook h2:nth-child(3) a {
-    color: #FFF;
-    z-index: 5; }
+    color: #FFF; }
   @media only screen and (min-width: 768px) {
     #whr_embed_hook h2:nth-child(3) {
+      padding-left: 40px;
       width: 50%; } }
 #whr_embed_hook ul:nth-child(4) {
   display: block;
   background-color: #122434;
-  width: 100%;
-  z-index: 5;
-  padding-left: 40px; }
+  width: 100%; }
   #whr_embed_hook ul:nth-child(4) .whr-item {
-    color: #FFF;
-    z-index: 5; }
+    color: #FFF; }
   #whr_embed_hook ul:nth-child(4) .whr-title a {
-    color: #FFF;
-    z-index: 5; }
+    color: #FFF; }
     #whr_embed_hook ul:nth-child(4) .whr-title a:hover {
       color: #B1C841; }
   #whr_embed_hook ul:nth-child(4) ul {
     display: none; }
   @media only screen and (min-width: 768px) {
     #whr_embed_hook ul:nth-child(4) {
+      padding-left: 40px;
       width: 50%; } }
 #whr_embed_hook h2:first-child {
   background-color: #B1C841;

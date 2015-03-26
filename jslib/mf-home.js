@@ -16,19 +16,6 @@ var height = $(window).height();
 				opacity:1
 			});
 		});
-
-		if ( $('.whr-items').length > 0) {
-			var items = $('.whr-items'),
-			firstItem = $(items[0]),
-			secondItem = $(items[1]);
-
-			if (firstItem.height() > secondItem.height() ) {
-				secondItem.height( firstItem.height() );
-			} else {
-				firstItem.height( secondItem.height() );
-			};
-		};
-
 	});
 
 $(document).ready(function(){
