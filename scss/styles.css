@@ -485,59 +485,101 @@ svg {
     background-image: url("../img/soda.png"); } }
 .careers nav {
   opacity: 1; }
+.careers .job-listing {
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left, right, color-stop(49%, #122434), color-stop(48%, #B1C841), color-stop(100%, #B1C841));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, #122434 49%, #B1C841 49%, #B1C841 100%);
+  /* Chrome10+,Safari5.1+ */
+  /* Opera 11.10+ */
+  /* IE10+ */
+  background: linear-gradient(left, #122434 49%, #B1C841 49%, #B1C841 100%); }
+  .careers .job-listing .container {
+    padding-right: 0px;
+    padding-left: 0px; }
+  @media only screen and (min-width: 768px) {
+    .careers .job-listing {
+      padding-right: 15px;
+      padding-left: 15px; } }
 
-#whr_embed_hook {
-  font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
-  font-weight: 300;
-  font-style: normal; }
-  #whr_embed_hook .whr-items {
-    display: block !important;
-    height: 100%;
-    padding: 20px; }
-  #whr_embed_hook .whr-group {
-    padding: 20px 20px 0px 20px; }
-  #whr_embed_hook .whr-title {
-    margin-top: 20px;
-    margin-bottom: 5px; }
-  #whr_embed_hook .whr-info {
+#whr_embed_hook .whr-items {
+  display: block !important;
+  height: auto;
+  padding: 25px; }
+  @media only screen and (min-width: 768px) {
+    #whr_embed_hook .whr-items {
+      width: 100%; } }
+#whr_embed_hook .whr-group {
+  padding: 20px 20px 0px 20px; }
+  #whr_embed_hook .whr-group a {
+    text-decoration: none;
+    pointer-events: none; }
+#whr_embed_hook .whr-title {
+  margin-top: 20px;
+  margin-bottom: 5px; }
+  #whr_embed_hook .whr-title a {
+    font-family: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 14px; }
+#whr_embed_hook .whr-info {
+  display: none; }
+#whr_embed_hook h2:nth-child(3) {
+  background-color: #122434;
+  width: 100%;
+  display: block;
+  z-index: 5;
+  padding-left: 40px; }
+  #whr_embed_hook h2:nth-child(3) a {
+    color: #FFF;
+    z-index: 5; }
+  @media only screen and (min-width: 768px) {
+    #whr_embed_hook h2:nth-child(3) {
+      width: 50%; } }
+#whr_embed_hook ul:nth-child(4) {
+  display: block;
+  background-color: #122434;
+  width: 100%;
+  z-index: 5;
+  padding-left: 40px; }
+  #whr_embed_hook ul:nth-child(4) .whr-item {
+    color: #FFF;
+    z-index: 5; }
+  #whr_embed_hook ul:nth-child(4) .whr-title a {
+    color: #FFF;
+    z-index: 5; }
+    #whr_embed_hook ul:nth-child(4) .whr-title a:hover {
+      color: #B1C841; }
+  #whr_embed_hook ul:nth-child(4) ul {
     display: none; }
-  #whr_embed_hook h2:first-child {
-    background-color: #122434;
-    width: 50%;
-    display: block;
-    float: left; }
-    #whr_embed_hook h2:first-child a {
-      color: #FFF; }
-  #whr_embed_hook ul:nth-child(2) {
-    display: block;
-    background-color: #122434;
-    width: 50%;
-    float: left;
-    clear: left; }
-    #whr_embed_hook ul:nth-child(2) .whr-item {
-      color: #FFF; }
-    #whr_embed_hook ul:nth-child(2) .whr-title a {
-      color: #FFF; }
-    #whr_embed_hook ul:nth-child(2) ul {
-      display: none; }
-  #whr_embed_hook h2:nth-child(3) {
-    background-color: #B1C841;
-    width: 50%;
-    display: block;
-    float: right;
-    margin-top: -44px; }
-    #whr_embed_hook h2:nth-child(3) a {
-      color: #122434; }
-  #whr_embed_hook ul:nth-child(4) {
-    background-color: #B1C841;
-    width: 50%;
-    display: block;
-    float: right;
-    clear: right; }
-    #whr_embed_hook ul:nth-child(4) .whr-item {
-      color: #122434;
-      background-color: #B1C841; }
-    #whr_embed_hook ul:nth-child(4) .whr-title a {
-      color: #122434; }
-    #whr_embed_hook ul:nth-child(4) ul {
-      display: none; }
+  @media only screen and (min-width: 768px) {
+    #whr_embed_hook ul:nth-child(4) {
+      width: 50%; } }
+#whr_embed_hook h2:first-child {
+  background-color: #B1C841;
+  width: 100%;
+  display: block;
+  float: right; }
+  #whr_embed_hook h2:first-child a {
+    color: #122434; }
+  @media only screen and (min-width: 768px) {
+    #whr_embed_hook h2:first-child {
+      width: 50%; } }
+#whr_embed_hook ul:nth-child(2) {
+  background-color: #B1C841;
+  width: 100%;
+  display: block;
+  float: right;
+  clear: right; }
+  #whr_embed_hook ul:nth-child(2) .whr-item {
+    color: #122434;
+    background-color: #B1C841; }
+  #whr_embed_hook ul:nth-child(2) .whr-title a {
+    color: #122434; }
+    #whr_embed_hook ul:nth-child(2) .whr-title a:hover {
+      color: #fff; }
+  #whr_embed_hook ul:nth-child(2) ul {
+    display: none; }
+  @media only screen and (min-width: 768px) {
+    #whr_embed_hook ul:nth-child(2) {
+      width: 50%; } }
