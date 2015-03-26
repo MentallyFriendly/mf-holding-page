@@ -33,23 +33,27 @@ var height = $(window).height();
 
 $(document).ready(function(){
 
-	// check if video is visible on screen
-	var video;
-	var nav = $('nav');
-	$(window).on('scroll', function(){
+	if ( $('.home-page').length > 0 ){
+		// check if video is visible on screen
+		var video;
+		var nav = $('nav');
+		$(window).on('scroll', function(){
 
-		video = $('#video-container').visible(true);
+			video = $('#video-container').visible(true);
 
-		if (video === true){
-			nav.removeClass('off-video-nav');
-			return;
-		} else if (video === false){
-			nav.addClass('off-video-nav');
-		} else{
-			return;
-		}
+			if (video === true){
+				nav.removeClass('off-video-nav');
+				return;
+			} else if (video === false){
+				nav.addClass('off-video-nav');
+			} else{
+				return;
+			}
 
-	});
+		});
+	} else {
+		$('nav').addClass('off-video-nav');
+	};
 
 
 	// Set mobile menu to fit window height
