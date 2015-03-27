@@ -661,6 +661,9 @@ svg{
 	nav{
 		opacity: 1;
 	}
+	#job-about{
+		margin-top: 40px;
+	}
 	.job-listing{
 		background: -moz-linear-gradient(left, $color-mf-navy, $color-mf-green 49%, $color-mf-green 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left, right, color-stop(49%, $color-mf-navy), color-stop(48%,$color-mf-green), color-stop(100%, $color-mf-green)); /* Chrome,Safari4+ */
@@ -687,13 +690,13 @@ svg{
 	.whr-items{
 		display: block !important;
 		height: auto !important;
-		padding: 25px;
+		padding: 25px 25px 70px 25px;
 		@media #{$media-sm} {
 			width: 100%;
 		}
 	}
 	.whr-group{
-		padding: 20px 20px 0px 20px;
+		padding: 70px 20px 0px 20px;
 		a{
 			text-decoration: none;
 			pointer-events: none;
@@ -711,6 +714,47 @@ svg{
 	}
 	.whr-info{
 		display: none;
+	}
+
+	// lnd
+	h2:first-child{
+		background-color: $color-mf-green;
+		width: 100%;
+		display: block;
+		float: right;
+		a{
+			color: $color-mf-navy;
+		}
+		@media #{$media-sm} {
+			width: 50%;
+		}
+	}
+	ul:nth-child(2){
+		background-color: $color-mf-green;
+		width: 100%;
+		display: block;
+		float: right;
+		clear: right;
+		margin-bottom: 70px;
+		.whr-item{
+			color: $color-mf-navy;
+			background-color: $color-mf-green;
+		}
+		.whr-title{
+			a{
+				color: $color-mf-navy;
+				&:hover{
+					color: #fff;
+				}
+			}
+		}
+		ul{
+			display: none;
+		}
+		@media #{$media-sm} {
+			width: 50%;
+			margin-bottom: 0px;
+		}
 	}
 
 	// aus
@@ -746,45 +790,6 @@ svg{
 		}
 		@media #{$media-sm} {
 			padding-left: 40px;
-			width: 50%;
-		}
-	}
-
-	// lnd
-	h2:first-child{
-		background-color: $color-mf-green;
-		width: 100%;
-		display: block;
-		float: right;
-		a{
-			color: $color-mf-navy;
-		}
-		@media #{$media-sm} {
-			width: 50%;
-		}
-	}
-	ul:nth-child(2){
-		background-color: $color-mf-green;
-		width: 100%;
-		display: block;
-		float: right;
-		clear: right;
-		.whr-item{
-			color: $color-mf-navy;
-			background-color: $color-mf-green;
-		}
-		.whr-title{
-			a{
-				color: $color-mf-navy;
-				&:hover{
-					color: #fff;
-				}
-			}
-		}
-		ul{
-			display: none;
-		}
-		@media #{$media-sm} {
 			width: 50%;
 		}
 	}

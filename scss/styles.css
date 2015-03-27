@@ -485,6 +485,8 @@ svg {
     background-image: url("../img/soda.png"); } }
 .careers nav {
   opacity: 1; }
+.careers #job-about {
+  margin-top: 40px; }
 .careers .job-listing {
   /* FF3.6+ */
   background: -webkit-gradient(linear, left, right, color-stop(49%, #122434), color-stop(48%, #B1C841), color-stop(100%, #B1C841));
@@ -507,12 +509,12 @@ svg {
 #whr_embed_hook .whr-items {
   display: block !important;
   height: auto !important;
-  padding: 25px; }
+  padding: 25px 25px 70px 25px; }
   @media only screen and (min-width: 768px) {
     #whr_embed_hook .whr-items {
       width: 100%; } }
 #whr_embed_hook .whr-group {
-  padding: 20px 20px 0px 20px; }
+  padding: 70px 20px 0px 20px; }
   #whr_embed_hook .whr-group a {
     text-decoration: none;
     pointer-events: none; }
@@ -526,6 +528,36 @@ svg {
     font-size: 14px; }
 #whr_embed_hook .whr-info {
   display: none; }
+#whr_embed_hook h2:first-child {
+  background-color: #B1C841;
+  width: 100%;
+  display: block;
+  float: right; }
+  #whr_embed_hook h2:first-child a {
+    color: #122434; }
+  @media only screen and (min-width: 768px) {
+    #whr_embed_hook h2:first-child {
+      width: 50%; } }
+#whr_embed_hook ul:nth-child(2) {
+  background-color: #B1C841;
+  width: 100%;
+  display: block;
+  float: right;
+  clear: right;
+  margin-bottom: 70px; }
+  #whr_embed_hook ul:nth-child(2) .whr-item {
+    color: #122434;
+    background-color: #B1C841; }
+  #whr_embed_hook ul:nth-child(2) .whr-title a {
+    color: #122434; }
+    #whr_embed_hook ul:nth-child(2) .whr-title a:hover {
+      color: #fff; }
+  #whr_embed_hook ul:nth-child(2) ul {
+    display: none; }
+  @media only screen and (min-width: 768px) {
+    #whr_embed_hook ul:nth-child(2) {
+      width: 50%;
+      margin-bottom: 0px; } }
 #whr_embed_hook h2:nth-child(3) {
   background-color: #122434;
   width: 100%;
@@ -551,32 +583,4 @@ svg {
   @media only screen and (min-width: 768px) {
     #whr_embed_hook ul:nth-child(4) {
       padding-left: 40px;
-      width: 50%; } }
-#whr_embed_hook h2:first-child {
-  background-color: #B1C841;
-  width: 100%;
-  display: block;
-  float: right; }
-  #whr_embed_hook h2:first-child a {
-    color: #122434; }
-  @media only screen and (min-width: 768px) {
-    #whr_embed_hook h2:first-child {
-      width: 50%; } }
-#whr_embed_hook ul:nth-child(2) {
-  background-color: #B1C841;
-  width: 100%;
-  display: block;
-  float: right;
-  clear: right; }
-  #whr_embed_hook ul:nth-child(2) .whr-item {
-    color: #122434;
-    background-color: #B1C841; }
-  #whr_embed_hook ul:nth-child(2) .whr-title a {
-    color: #122434; }
-    #whr_embed_hook ul:nth-child(2) .whr-title a:hover {
-      color: #fff; }
-  #whr_embed_hook ul:nth-child(2) ul {
-    display: none; }
-  @media only screen and (min-width: 768px) {
-    #whr_embed_hook ul:nth-child(2) {
       width: 50%; } }
