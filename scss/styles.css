@@ -278,11 +278,15 @@ section {
   bottom: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
   transform: translate(-50%, 0);
   cursor: pointer;
   position: absolute;
   -webkit-animation: pulse 2s infinite ease-in-out;
+  -moz-animation: pulse 2s infinite ease-in-out;
+  -o-animation: pulse 2s infinite ease-in-out;
   animation: pulse 2s infinite ease-in-out; }
 @-webkit-keyframes pulse {
   0% {
@@ -488,12 +492,15 @@ svg {
 .careers #job-about {
   margin-top: 40px; }
 .careers .job-listing {
+  background: -moz-linear-gradient(left, #122434, #B1C841 49%, #B1C841 100%);
   /* FF3.6+ */
   background: -webkit-gradient(linear, left, right, color-stop(49%, #122434), color-stop(48%, #B1C841), color-stop(100%, #B1C841));
   /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(left, #122434 49%, #B1C841 49%, #B1C841 100%);
   /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, #122434 49%, #B1C841 49%, #B1C841 100%);
   /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, #122434 49%, #B1C841 49%, #B1C841 100%);
   /* IE10+ */
   background: linear-gradient(left, #122434 49%, #B1C841 49%, #B1C841 100%); }
   .careers .job-listing .container {
@@ -584,3 +591,35 @@ svg {
     #whr_embed_hook ul:nth-child(4) {
       padding-left: 40px;
       width: 50%; } }
+
+#privacy-policy {
+  margin-top: 50px; }
+
+#soda p.privacy-policy {
+  display: block;
+  margin-top: 20px;
+  float: none; }
+
+#soda {
+  background-position: 30px 48px; }
+
+#privacy-policy ul {
+  margin-bottom: 10px;
+  margin-left: 20px; }
+  #privacy-policy ul li {
+    list-style: disc;
+    font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 23px; }
+
+@media only screen and (min-width: 992px) {
+  #soda p.privacy-policy {
+    float: right;
+    margin: 0; }
+
+  #soda {
+    background-position: 30px; } }
+
+/*# sourceMappingURL=styles.css.map */

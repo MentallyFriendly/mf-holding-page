@@ -795,6 +795,46 @@ svg{
 	}
 }
 
+#privacy-policy {
+	margin-top: 50px;
+}
+
+#soda p.privacy-policy {
+	display: block;
+	margin-top: 20px;
+	float: none;
+}
+
+#soda {
+	background-position: 30px 48px;
+}
+
+#privacy-policy {
+	ul {
+		margin-bottom: 10px;
+		margin-left: 20px;
+
+		li {
+			list-style: disc;
+			font-family: $font-body;
+			font-weight: $font-body-weight;
+			font-style: $font-body-style;
+			font-size:16px;
+			line-height: 23px;
+		}
+	}
+}
+
+@media #{$media-md} {
+	#soda p.privacy-policy {
+		float: right;
+		margin: 0;
+	}
+
+	#soda {
+		background-position: 30px;
+	}
+}
 
 
 
