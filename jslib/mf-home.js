@@ -7,6 +7,7 @@ var height = $(window).height();
 		'min-width': width
 	});
 
+	/*
 	$(window).load(function(){
 		$('#loader').delay(2500).animate({
 			opacity:0
@@ -17,6 +18,9 @@ var height = $(window).height();
 			});
 		});
 	});
+	*/
+
+   $('nav').css('opacity', 1);
 
 $(document).ready(function(){
 
