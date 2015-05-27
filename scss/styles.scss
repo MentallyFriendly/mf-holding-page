@@ -441,12 +441,12 @@ section{
 		margin-bottom: 25px;
 	}
 	.fitnessfirst-logo {
-		width: 207px;
-		height: 41px;
+		width: 180px;
+		height: 40px;
 		display: inline-block;
 		margin-bottom: 25px;
 		background: url('../img/fitness-first.png') no-repeat;
-		background-size: 207px 41px;
+		background-size: contain;
 	}
 	.coles-logo {
 		width: 127px;
