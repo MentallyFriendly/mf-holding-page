@@ -278,11 +278,15 @@ section {
   bottom: 20px;
   left: 50%;
   -webkit-transform: translate(-50%, 0%);
+  -moz-transform: translate(-50%, 0%);
   -ms-transform: translate(-50%, 0%);
+  -o-transform: translate(-50%, 0%);
   transform: translate(-50%, 0);
   cursor: pointer;
   position: absolute;
   -webkit-animation: pulse 2s infinite ease-in-out;
+  -moz-animation: pulse 2s infinite ease-in-out;
+  -o-animation: pulse 2s infinite ease-in-out;
   animation: pulse 2s infinite ease-in-out; }
 @-webkit-keyframes pulse {
   0% {
@@ -488,14 +492,17 @@ svg {
 .careers #job-about {
   margin-top: 40px; }
 .careers .job-listing {
-  /* FF3.6+ */
-  background: -webkit-gradient(linear, left, right, color-stop(49%, #122434), color-stop(48%, #B1C841), color-stop(100%, #B1C841));
+  background: -webkit-gradient(linear, left, right, color-stop(50%, #122434), color-stop(48%, #B1C841), color-stop(100%, #B1C841));
   /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(left, #122434 49%, #B1C841 49%, #B1C841 100%);
+  background: -webkit-linear-gradient(left, #122434 50%, #B1C841 50%, #B1C841 100%);
   /* Chrome10+,Safari5.1+ */
-  /* Opera 11.10+ */
+  background: -moz-linear-gradient(left, #122434 50%, #B1C841 50%, #B1C841 100%);
+  /* FF3.6+ */
+  background: -ms-linear-gradient(left, #122434 50%, #B1C841 50%, #B1C841 100%);
   /* IE10+ */
-  background: linear-gradient(left, #122434 49%, #B1C841 49%, #B1C841 100%); }
+  background: -o-linear-gradient(left, #122434 50%, #B1C841 50%, #B1C841 100%);
+  /* Opera 11.10+ */
+  background: linear-gradient(left, #122434 50%, #B1C841 50%, #B1C841 100%); }
   .careers .job-listing .container {
     padding-right: 0px;
     padding-left: 0px; }
@@ -506,6 +513,17 @@ svg {
 .careers footer {
   border-top: 5px solid #fff; }
 
+#whr_embed_hook h2 a {
+  letter-spacing: 3px;
+  font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  margin: 0px;
+  font-size: 18px;
+  line-height: 23px; }
+  @media only screen and (min-width: 768px) {
+    #whr_embed_hook h2 a {
+      font-size: 20px; } }
 #whr_embed_hook .whr-items {
   display: block !important;
   height: auto !important;
@@ -561,7 +579,8 @@ svg {
 #whr_embed_hook h2:nth-child(3) {
   background-color: #122434;
   width: 100%;
-  display: block; }
+  display: block;
+  color: #FFF; }
   #whr_embed_hook h2:nth-child(3) a {
     color: #FFF; }
   @media only screen and (min-width: 768px) {
@@ -584,3 +603,5 @@ svg {
     #whr_embed_hook ul:nth-child(4) {
       padding-left: 40px;
       width: 50%; } }
+
+/*# sourceMappingURL=styles.css.map */

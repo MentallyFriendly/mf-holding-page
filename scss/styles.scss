@@ -665,12 +665,23 @@ svg{
 		margin-top: 40px;
 	}
 	.job-listing{
-		background: -moz-linear-gradient(left, $color-mf-navy, $color-mf-green 49%, $color-mf-green 100%); /* FF3.6+ */
-		background: -webkit-gradient(linear, left, right, color-stop(49%, $color-mf-navy), color-stop(48%,$color-mf-green), color-stop(100%, $color-mf-green)); /* Chrome,Safari4+ */
-		background: -webkit-linear-gradient(left, $color-mf-navy 49%,$color-mf-green 49%,$color-mf-green 100%); /* Chrome10+,Safari5.1+ */
-		background: -o-linear-gradient(left, $color-mf-navy 49%, $color-mf-green 49%, $color-mf-green 100%); /* Opera 11.10+ */
-		background: -ms-linear-gradient(left, $color-mf-navy 49%, $color-mf-green 49%, $color-mf-green 100%); /* IE10+ */
-		background: linear-gradient(left, $color-mf-navy 49%,$color-mf-green 49%,$color-mf-green 100%);
+		// @mixin linear-gradient($fromColor, $toColor) {
+		//   background-color: $fromColor; /* Fallback Color */
+		//   background: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
+		//   background: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
+		//   background:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
+		//   background:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
+		//   background:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
+		//   background:         linear-gradient(top, $fromColor, $toColor);
+		//   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
+		// }
+
+		background: -webkit-gradient(linear, left, right, color-stop(50%, $color-mf-navy), color-stop(48%,$color-mf-green), color-stop(100%, $color-mf-green)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left, $color-mf-navy 50%,$color-mf-green 50%,$color-mf-green 100%); /* Chrome10+,Safari5.1+ */
+		background:    -moz-linear-gradient(left, $color-mf-navy 50%, $color-mf-green 50%, $color-mf-green 100%); /* FF3.6+ */
+		background:     -ms-linear-gradient(left, $color-mf-navy 50%, $color-mf-green 50%, $color-mf-green 100%); /* IE10+ */
+		background:      -o-linear-gradient(left, $color-mf-navy 50%, $color-mf-green 50%, $color-mf-green 100%); /* Opera 11.10+ */
+		background:         linear-gradient(left, $color-mf-navy 50%,$color-mf-green 50%,$color-mf-green 100%);
 		.container{
 			padding-right: 0px;
 			padding-left: 0px;
@@ -686,6 +697,20 @@ svg{
 }
 
 #whr_embed_hook{
+	h2{
+		a{
+			letter-spacing: 3px;
+			font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
+			font-weight: 500;
+			font-style: normal;
+			margin: 0px;
+			font-size: 18px;
+			line-height: 23px;
+			@media #{$media-sm}{
+				font-size: 20px;
+			}
+		}
+	}
 	
 	.whr-items{
 		display: block !important;
@@ -716,7 +741,7 @@ svg{
 		display: none;
 	}
 
-	// lnd
+	// LND Workable
 	h2:first-child{
 		background-color: $color-mf-green;
 		width: 100%;
@@ -757,11 +782,12 @@ svg{
 		}
 	}
 
-	// aus
+	// SYD Workable
 	h2:nth-child(3){
 		background-color: $color-mf-navy;
 		width: 100%;
 		display: block;
+		color: $color-title;
 		a{
 			color: $color-title;
 		}
