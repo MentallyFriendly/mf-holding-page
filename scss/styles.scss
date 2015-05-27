@@ -665,17 +665,6 @@ svg{
 		margin-top: 40px;
 	}
 	.job-listing{
-		// @mixin linear-gradient($fromColor, $toColor) {
-		//   background-color: $fromColor; /* Fallback Color */
-		//   background: -webkit-gradient(linear, left top, left bottom, from($fromColor), to($toColor)); /* Saf4+, Chrome */
-		//   background: -webkit-linear-gradient(top, $fromColor, $toColor); /* Chrome 10+, Saf5.1+, iOS 5+ */
-		//   background:    -moz-linear-gradient(top, $fromColor, $toColor); /* FF3.6 */
-		//   background:     -ms-linear-gradient(top, $fromColor, $toColor); /* IE10 */
-		//   background:      -o-linear-gradient(top, $fromColor, $toColor); /* Opera 11.10+ */
-		//   background:         linear-gradient(top, $fromColor, $toColor);
-		//   filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#{$fromColor}', EndColorStr='#{$toColor}');
-		// }
-
 		background: -webkit-gradient(linear, left, right, color-stop(50%, $color-mf-navy), color-stop(48%,$color-mf-green), color-stop(100%, $color-mf-green)); /* Chrome,Safari4+ */
 		background: -webkit-linear-gradient(left, $color-mf-navy 50%,$color-mf-green 50%,$color-mf-green 100%); /* Chrome10+,Safari5.1+ */
 		background:    -moz-linear-gradient(left, $color-mf-navy 50%, $color-mf-green 50%, $color-mf-green 100%); /* FF3.6+ */
@@ -818,6 +807,47 @@ svg{
 			padding-left: 40px;
 			width: 50%;
 		}
+	}
+}
+
+#privacy-policy {
+	margin-top: 50px;
+}
+
+#soda p.privacy-policy {
+	display: block;
+	margin-top: 20px;
+	float: none;
+}
+
+#soda {
+	background-position: 30px 48px;
+}
+
+#privacy-policy {
+	ul {
+		margin-bottom: 10px;
+		margin-left: 20px;
+
+		li {
+			list-style: disc;
+			font-family: $font-body;
+			font-weight: $font-body-weight;
+			font-style: $font-body-style;
+			font-size:16px;
+			line-height: 23px;
+		}
+	}
+}
+
+@media #{$media-md} {
+	#soda p.privacy-policy {
+		float: right;
+		margin: 0;
+	}
+
+	#soda {
+		background-position: 30px;
 	}
 }
 
