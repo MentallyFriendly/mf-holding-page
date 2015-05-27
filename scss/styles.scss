@@ -35,7 +35,9 @@ $font-body-style: normal;
 $font-details: "Maison Neue Mono", Calibri, Arial, Roboto, sans-serif;
 $font-details-weight: 300;
 $font-details-style: normal;
-
+*{
+	transition: 0.2s all ease-in-out;
+}
 body, html{
 	background-color: $color-background;
 	color: $color-body;

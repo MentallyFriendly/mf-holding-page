@@ -3,6 +3,9 @@
 /* Small Devices, Tablets */
 /* Medium Devices, Desktops */
 /* Large Devices, Wide Screens */
+* {
+  transition: 0.2s all ease-in-out; }
+
 body, html {
   background-color: #F4F3EE;
   color: #333333; }
